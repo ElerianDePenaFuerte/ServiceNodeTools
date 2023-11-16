@@ -10,4 +10,4 @@ Please keep in mind the NDA's you signed -> do not share any information from th
 - Please create for each new project a new folder in the main branch.
 - please add your username / community name in the commit changes
 
-## ENJOY
+## ENJOY 
