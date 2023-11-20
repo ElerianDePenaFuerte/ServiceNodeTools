@@ -72,14 +72,14 @@ class Controller():
                     response.status_code = 200
                     response.headers["Content-Type"] = "application/json; charset=utf-8"
                     _logger.info("Response bnb: " +
-                                 str(self.ethBids.get_bids(dest_chain)))
+                                 str(self.bscBids.get_bids(dest_chain)))
                     return response
                 case Blockchain.AVALANCHE:
                     response = jsonify(self.avaxBids.get_bids(dest_chain))
                     response.status_code = 200
                     response.headers["Content-Type"] = "application/json; charset=utf-8"
                     _logger.info("Response avax: " +
-                                 str(self.ethBids.get_bids(dest_chain)))
+                                 str(self.avaxBids.get_bids(dest_chain)))
                     return response
                 case Blockchain.SOLANA:
                     pass
@@ -88,7 +88,7 @@ class Controller():
                     response.status_code = 200
                     response.headers["Content-Type"] = "application/json; charset=utf-8"
                     _logger.info("Response matic: " +
-                                 str(self.ethBids.get_bids(dest_chain)))
+                                 str(self.polyBids.get_bids(dest_chain)))
                     return response
                 case Blockchain.CRONOS:
                     pass
